@@ -1,0 +1,15 @@
+{
+    "attacker_dataset": "artifact/marson_attacker_dataset.pt",
+    "architecture": "default",
+    "dropout_rate": 0.1,
+    "output_activation": null,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "batch_size": 64,
+    "max_epochs": 200,
+    "early_stopping_patience": 15,
+    "validation_ratio": 0.2,
+    "artifact_path": "artifact",
+    "exp_name": "marson_attack",
+    "device": "cuda"
+}

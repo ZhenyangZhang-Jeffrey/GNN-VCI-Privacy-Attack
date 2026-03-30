@@ -1,0 +1,28 @@
+{
+  "naive_baseline": {
+    "mse": 0.10977741330862045,
+    "cosine_similarity": 0.6259482502937317,
+    "r2_score": -0.0001790608015229756
+  },
+  "attacker_model": {
+    "mse": 0.09290484338998795,
+    "cosine_similarity": 0.6927080154418945,
+    "r2_score": 0.051216404510962724
+  },
+  "improvement": {
+    "mse_improvement_percent": 15.369801223278046,
+    "cosine_sim_improvement_percent": 17.84768731163911,
+    "r2_improvement": 0.0513954653124857
+  },
+  "hvg_genes": {
+    "mse": 0.5534704327583313,
+    "cosine_similarity": 0.8386950492858887,
+    "r2_score": 0.3363436707512516
+  },
+  "objectives": {
+    "beat_naive_baseline": true,
+    "high_cosine_similarity": false,
+    "high_r2": false,
+    "hvg_genes_exposed": true
+  }
+}

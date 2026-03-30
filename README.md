@@ -1,6 +1,6 @@
 # GNN Final Project: VCI Model Privacy Attack Analysis
 
-This project is a final project for the Generative Neural Networks (GNN) course, based on the implementation of the [**Variational Causal Inference**](https://arxiv.org/abs/2410.12730) original paper code.
+This project is a final project for the Graph Neural Networks (GNN) course, based on the implementation of the [**Variational Causal Inference**](https://arxiv.org/abs/2410.12730) original paper code.
 
 **For detailed information about the original paper code, please refer to:** https://github.com/yulun-rayn/variational-causal-inference
 
@@ -8,7 +8,7 @@ This project is a final project for the Generative Neural Networks (GNN) course,
 
 ```
 ├── vci/                  # VCI original paper framework code
-├── attack/               # Model privacy attack analysis
+├── attack/               # Final project: Model privacy attack analysis
 ├── artifact/             # Training results and attack outputs
 └── datasets/             # Datasets
 ```

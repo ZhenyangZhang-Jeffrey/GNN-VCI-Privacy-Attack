@@ -1,0 +1,10 @@
+{
+  "n_cells": 7344,
+  "n_hvg_genes": 50,
+  "hvg_overall_r2": 0.4300977860438109,
+  "hvg_gene_mse_mean": 0.5534704327583313,
+  "hvg_gene_mae_mean": 0.5727100968360901,
+  "hvg_gene_r2_mean": 0.3363436707512516,
+  "hvg_genes_above_r2_threshold": 32,
+  "privacy_risk": "HIGH"
+}

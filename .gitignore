@@ -11,7 +11,9 @@ log/
 runs/
 data/
 saves/
-artifact/
+
+# Large model checkpoint files (> 100MB)
+*.pt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
