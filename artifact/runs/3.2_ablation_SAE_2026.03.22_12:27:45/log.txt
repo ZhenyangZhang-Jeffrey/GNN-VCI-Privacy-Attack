@@ -1,0 +1,45 @@
+{"training_args": {"name": "3.2_ablation_SAE", "artifact_path": "/workspace/VCI_Project/artifact", "device": "cuda:0", "data_path": "/workspace/VCI_Project/datasets/morphoMNIST", "data_name": "morphoMNIST", "label_names": null, "omega0": 10.0, "omega1": 0.5, "omega2": 0.0, "dist_outcomes": "bernoulli", "dist_mode": "discriminate", "checkpoint": null, "checkpoint_classifier": null, "hparams": {"outcome_emb_dim": 32, "treatment_emb_dim": 8, "covariate_emb_dim": 2, "defuse_steps": 3, "encoder_resolution": "32*32,16*16,8*8,4*4,1*1", "encoder_width": "16,32,64,128,256", "encoder_depth": "4,4,4,4,4", "decoder_resolution": "1*1,4*4,8*8,16*16,32*32", "decoder_width": "256,128,64,32,16", "decoder_depth": "4,4,4,4,4", "discriminator_resolution": "32*32,16*16,8*8,4*4,1*1", "discriminator_width": "16,32,64,128,256", "discriminator_depth": "4,4,4,4,4", "generator_lr": 0.0001, "generator_wd": 4e-05, "discriminator_lr": 0.0001, "discriminator_wd": 4e-05, "discriminator_freq": 2, "opt_step_size": 100, "max_grad_norm": 1, "grad_skip_threshold": -1, "patience": 20, "classifier_resolution": "32*32,16*16,8*8,4*4,1*1", "classifier_width": "16,32,64,128,256", "classifier_depth": "4,4,4,4,4", "classifier_lr": 0.0001, "classifier_wd": 4e-05}, "seed": null, "batch_size": 512, "max_epochs": 200, "checkpoint_freq": 10, "eval_mode": "native", "num_outcomes": [1, 32, 32], "num_treatments": 32, "num_covariates": [1]}}
+
+{"epoch": 0, "training_stats": {"Indiv-spec NLLH": 0.5177731193223242, "Covar-spec NLLH": 0.8867870256052179, "KL Divergence": 0.23906349397059215, "Real Sample Loss": 0.31077439502134163, "Fake Sample Loss": 0.3144626276472868}, "evaluation_stats": [], "ellapsed_minutes": 0.7427123308181762}
+{"model_saved": "model_seed=None_epoch=0.pt\n"}
+{"epoch": 10, "training_stats": {"Indiv-spec NLLH": 0.1384227604179059, "Covar-spec NLLH": 0.8204809697502751, "KL Divergence": 100.09592883869753, "Real Sample Loss": 0.3210538065029403, "Fake Sample Loss": 0.3502643770080502}, "evaluation_stats": [], "ellapsed_minutes": 7.660819331804912}
+{"model_saved": "model_seed=None_epoch=10.pt\n"}
+{"epoch": 20, "training_stats": {"Indiv-spec NLLH": 0.12052309532034194, "Covar-spec NLLH": 0.9798289188894175, "KL Divergence": 47.6052696421995, "Real Sample Loss": 0.2961002257415804, "Fake Sample Loss": 0.32383866683911466}, "evaluation_stats": [], "ellapsed_minutes": 14.731304335594178}
+{"model_saved": "model_seed=None_epoch=20.pt\n"}
+{"epoch": 30, "training_stats": {"Indiv-spec NLLH": 0.11324138611049975, "Covar-spec NLLH": 1.8567050947981365, "KL Divergence": 75.06690839993752, "Real Sample Loss": 0.2547692724708783, "Fake Sample Loss": 0.29378230086827684}, "evaluation_stats": [], "ellapsed_minutes": 21.773829130331674}
+{"model_saved": "model_seed=None_epoch=30.pt\n"}
+{"epoch": 40, "training_stats": {"Indiv-spec NLLH": 0.10737096998146024, "Covar-spec NLLH": 3.5611741825685663, "KL Divergence": 93.05951674509856, "Real Sample Loss": 0.2545691002476013, "Fake Sample Loss": 0.2753752733943826}, "evaluation_stats": [], "ellapsed_minutes": 28.833199457327524}
+{"model_saved": "model_seed=None_epoch=40.pt\n"}
+{"epoch": 50, "training_stats": {"Indiv-spec NLLH": 0.09819564614760673, "Covar-spec NLLH": 3.2481840182158908, "KL Divergence": 57.91207439616575, "Real Sample Loss": 0.24846763252201726, "Fake Sample Loss": 0.25007217213258903}, "evaluation_stats": [], "ellapsed_minutes": 35.86841373840968}
+{"model_saved": "model_seed=None_epoch=50.pt\n"}
+{"epoch": 60, "training_stats": {"Indiv-spec NLLH": 0.09525831788778305, "Covar-spec NLLH": 3.259061308230384, "KL Divergence": 71.10675824698755, "Real Sample Loss": 0.22777946192329213, "Fake Sample Loss": 0.2550004708059764}, "evaluation_stats": [], "ellapsed_minutes": 42.922246026992795}
+{"model_saved": "model_seed=None_epoch=60.pt\n"}
+{"epoch": 70, "training_stats": {"Indiv-spec NLLH": 0.0895071412294598, "Covar-spec NLLH": 3.0144407042002275, "KL Divergence": 63.2069482641705, "Real Sample Loss": 0.21290652327618356, "Fake Sample Loss": 0.2619330582477279}, "evaluation_stats": [], "ellapsed_minutes": 49.956887002786}
+{"model_saved": "model_seed=None_epoch=70.pt\n"}
+{"epoch": 80, "training_stats": {"Indiv-spec NLLH": 0.09693837462592933, "Covar-spec NLLH": 3.2864744198524347, "KL Divergence": 16108.917226306463, "Real Sample Loss": 0.2130320084802175, "Fake Sample Loss": 0.2572473752296577}, "evaluation_stats": [], "ellapsed_minutes": 57.01233082612355}
+{"model_saved": "model_seed=None_epoch=80.pt\n"}
+{"epoch": 90, "training_stats": {"Indiv-spec NLLH": 0.09608507705694538, "Covar-spec NLLH": 4.644969889673136, "KL Divergence": 26787.949769100902, "Real Sample Loss": 0.2182027253053956, "Fake Sample Loss": 0.2519263357429181}, "evaluation_stats": [], "ellapsed_minutes": 64.01774543523788}
+{"model_saved": "model_seed=None_epoch=90.pt\n"}
+{"epoch": 100, "training_stats": {"Indiv-spec NLLH": 0.19111074279930632, "Covar-spec NLLH": 5.93974786693767, "KL Divergence": 39260.73719296213, "Real Sample Loss": 0.2105256647376691, "Fake Sample Loss": 0.25184399445178146}, "evaluation_stats": [], "ellapsed_minutes": 71.07307918866475}
+{"model_saved": "model_seed=None_epoch=100.pt\n"}
+{"epoch": 110, "training_stats": {"Indiv-spec NLLH": 0.7750871893713029, "Covar-spec NLLH": 17.17136812210083, "KL Divergence": 46837.18192200742, "Real Sample Loss": 0.2046168976921146, "Fake Sample Loss": 0.2501917345038915}, "evaluation_stats": [], "ellapsed_minutes": 78.15228780905406}
+{"model_saved": "model_seed=None_epoch=110.pt\n"}
+{"epoch": 120, "training_stats": {"Indiv-spec NLLH": 1.1330877532393246, "Covar-spec NLLH": 25.827002953674835, "KL Divergence": 67528.69321040784, "Real Sample Loss": 0.20080537740456855, "Fake Sample Loss": 0.243560898354498}, "evaluation_stats": [], "ellapsed_minutes": 85.21853265364965}
+{"model_saved": "model_seed=None_epoch=120.pt\n"}
+{"epoch": 130, "training_stats": {"Indiv-spec NLLH": 0.8256546738794295, "Covar-spec NLLH": 7.9555641028840665, "KL Divergence": 31927.447120795816, "Real Sample Loss": 0.20313483173564328, "Fake Sample Loss": 0.24254855058960995}, "evaluation_stats": [], "ellapsed_minutes": 92.3128837188085}
+{"model_saved": "model_seed=None_epoch=130.pt\n"}
+{"epoch": 140, "training_stats": {"Indiv-spec NLLH": 0.7488645774833227, "Covar-spec NLLH": 8.648602097721422, "KL Divergence": 57845.83835407839, "Real Sample Loss": 0.19866534284615922, "Fake Sample Loss": 0.23542959205174852}, "evaluation_stats": [], "ellapsed_minutes": 99.3704368710518}
+{"model_saved": "model_seed=None_epoch=140.pt\n"}
+{"epoch": 150, "training_stats": {"Indiv-spec NLLH": 0.7726735922239595, "Covar-spec NLLH": 5.127242371187371, "KL Divergence": 3634.8221696110095, "Real Sample Loss": 0.19101069867610931, "Fake Sample Loss": 0.24516315354129015}, "evaluation_stats": [], "ellapsed_minutes": 106.48985835313798}
+{"model_saved": "model_seed=None_epoch=150.pt\n"}
+{"epoch": 160, "training_stats": {"Indiv-spec NLLH": 0.6142263159913531, "Covar-spec NLLH": 5.3216326721644, "KL Divergence": 4116.415310681877, "Real Sample Loss": 0.19815535666578907, "Fake Sample Loss": 0.23752614704229064}, "evaluation_stats": [], "ellapsed_minutes": 113.68154147863387}
+{"model_saved": "model_seed=None_epoch=160.pt\n"}
+{"epoch": 170, "training_stats": {"Indiv-spec NLLH": 0.6442994753182945, "Covar-spec NLLH": 8.136009204185616, "KL Divergence": 25283.349228163897, "Real Sample Loss": 0.18845279527417683, "Fake Sample Loss": 0.2387384486905599}, "evaluation_stats": [], "ellapsed_minutes": 120.86316225926082}
+{"model_saved": "model_seed=None_epoch=170.pt\n"}
+{"epoch": 180, "training_stats": {"Indiv-spec NLLH": 0.7255463155649476, "Covar-spec NLLH": 16.683349217398693, "KL Divergence": 29381.90280720339, "Real Sample Loss": 0.18964685802742587, "Fake Sample Loss": 0.23733069836083104}, "evaluation_stats": [], "ellapsed_minutes": 128.0240436077118}
+{"model_saved": "model_seed=None_epoch=180.pt\n"}
+{"epoch": 190, "training_stats": {"Indiv-spec NLLH": 0.8773552431898602, "Covar-spec NLLH": 16.048868316715048, "KL Divergence": 27662.26633673199, "Real Sample Loss": 0.18984002001204733, "Fake Sample Loss": 0.23403802286770384}, "evaluation_stats": [], "ellapsed_minutes": 135.19706116517384}
+{"model_saved": "model_seed=None_epoch=190.pt\n"}
+{"epoch": 199, "training_stats": {"Indiv-spec NLLH": 0.9564462682958377, "Covar-spec NLLH": 20.850703813261905, "KL Divergence": 28288.85095007945, "Real Sample Loss": 0.18630291117449937, "Fake Sample Loss": 0.23534210102032807}, "evaluation_stats": [], "ellapsed_minutes": 141.65736560821534}
+{"model_saved": "model_seed=None_epoch=199.pt\n"}
+{"stop": 199}

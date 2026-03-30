@@ -1,0 +1,115 @@
+{"training_args": {"name": "3.1_marson_baseline", "artifact_path": "/workspace/VCI_Project/artifact", "device": "cuda:0", "data_path": "/workspace/VCI_Project/datasets/marson_prepped.h5ad", "data_name": "gene", "label_names": null, "omega0": 1.0, "omega1": 1.7, "omega2": 0.1, "dist_outcomes": "normal", "dist_mode": "match", "checkpoint": null, "checkpoint_classifier": null, "hparams": {"outcome_emb_dim": 256, "treatment_emb_dim": 64, "covariate_emb_dim": 16, "latent_dim": 128, "encoder_width": 128, "encoder_depth": 3, "decoder_width": 128, "decoder_depth": 3, "discriminator_width": 64, "discriminator_depth": 3, "generator_lr": 0.0003, "generator_wd": 4e-07, "discriminator_lr": 0.0003, "discriminator_wd": 4e-07, "discriminator_freq": 2, "opt_step_size": 450, "max_grad_norm": -1, "grad_skip_threshold": -1, "patience": 20, "classifier_width": 64, "classifier_depth": 3, "classifier_lr": 0.0003, "classifier_wd": 4e-07}, "seed": null, "batch_size": 256, "max_epochs": 100, "checkpoint_freq": 20, "eval_mode": "classic", "num_outcomes": 2013, "num_treatments": 70, "num_covariates": [2, 2, 2]}}
+
+Evaluation stats: {}
+{"epoch": 0, "training_stats": {"Indiv-spec NLLH": 0.6173440611880758, "Covar-spec NLLH": 1.028941605920377, "KL Divergence": 0.9775554628151915}, "evaluation_stats": {"train": [0.3158237954201235, 0.009331567140211015], "test": [0.3980867784552598, 0.35323101258221856], "ood": [0.27576486049315, 0.2748189280291635]}, "ellapsed_minutes": 0.2730978727340698}
+{"model_saved": "model_seed=None_epoch=0.pt\n"}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+{"epoch": 20, "training_stats": {"Indiv-spec NLLH": -0.5144823792188064, "Covar-spec NLLH": 0.9701956469079722, "KL Divergence": 0.24906197954779086}, "evaluation_stats": {"train": [0.8544332339715452, 0.46418136860481257], "test": [0.8361071860953446, 0.43257380270591284], "ood": [0.8063931624435078, 0.4390231524648082]}, "ellapsed_minutes": 5.668506375948588}
+{"model_saved": "model_seed=None_epoch=20.pt\n"}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+{"epoch": 40, "training_stats": {"Indiv-spec NLLH": -0.6129036239955736, "Covar-spec NLLH": 0.9702134676601576, "KL Divergence": 0.308535408196242}, "evaluation_stats": {"train": [0.8635510532243789, 0.50833012849723], "test": [0.8566331221848354, 0.5544392088001071], "ood": [0.8188228073776225, 0.44982085521216475]}, "ellapsed_minutes": 11.086159507433573}
+{"model_saved": "model_seed=None_epoch=40.pt\n"}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+{"epoch": 60, "training_stats": {"Indiv-spec NLLH": -0.679010239891384, "Covar-spec NLLH": 0.9700936224149621, "KL Divergence": 0.30254251788491787}, "evaluation_stats": {"train": [0.8543571217075832, 0.506736841406055], "test": [0.8514861167742472, 0.5908998540089103], "ood": [0.8223267687888256, 0.4612453158670003]}, "ellapsed_minutes": 16.842510485649107}
+{"model_saved": "model_seed=None_epoch=60.pt\n"}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+{"epoch": 80, "training_stats": {"Indiv-spec NLLH": -0.7066264432409536, "Covar-spec NLLH": 0.9701164960861206, "KL Divergence": 0.2969107697839322}, "evaluation_stats": {"train": [0.8429621941872748, 0.49631043883869425], "test": [0.8383389741725065, 0.591176695142161], "ood": [0.8233367150290585, 0.47202752702438394]}, "ellapsed_minutes": 22.529347689946494}
+{"model_saved": "model_seed=None_epoch=80.pt\n"}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+Evaluation stats: {}
+{"epoch": 99, "training_stats": {"Indiv-spec NLLH": -0.7175814032554626, "Covar-spec NLLH": 0.9701532026995783, "KL Divergence": 0.2905579298734665}, "evaluation_stats": {"train": [0.8500702829348109, 0.5032791139963393], "test": [0.8501256827661161, 0.6098835888878305], "ood": [0.8240823036485017, 0.4788621554557445]}, "ellapsed_minutes": 28.05969169139862}
+{"model_saved": "model_seed=None_epoch=99.pt\n"}
+{"stop": 99}

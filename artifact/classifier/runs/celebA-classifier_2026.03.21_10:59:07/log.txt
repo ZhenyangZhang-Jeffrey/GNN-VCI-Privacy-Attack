@@ -1,0 +1,11 @@
+{"training_args": {"name": "celebA-classifier", "artifact_path": "/workspace/VCI_Project/artifact/classifier", "device": "cuda:0", "data_path": "/dev/shm/celebA-HQ", "data_name": "celebA", "label_names": "Male,Smiling", "checkpoint": null, "hparams": {"classifier_resolution": "64*64,32*32,16*16,8*8,4*4,1*1", "classifier_width": "32,64,128,256,512,1024", "classifier_depth": "3,12,12,6,3,9", "classifier_fc_width": 1024, "classifier_fc_depth": 2, "classifier_lr": 0.0003, "classifier_wd": 4e-07, "classifier_ss": 500, "max_grad_norm": 1, "grad_skip_threshold": -1, "patience": 20, "outcome_emb_dim": 32, "treatment_emb_dim": 8, "covariate_emb_dim": 2, "defuse_steps": 3, "encoder_resolution": "64*64,32*32,16*16,8*8,4*4,1*1", "encoder_width": "32,64,128,256,512,1024", "encoder_depth": "3,12,12,6,3,3", "decoder_resolution": "1*1,4*4,8*8,16*16,32*32,64*64", "decoder_width": "1024,512,256,128,64,32", "decoder_depth": "3,3,6,12,12,3", "discriminator_resolution": "64*64,32*32,16*16,8*8,4*4,1*1", "discriminator_width": "32,64,128,256,512,1024", "discriminator_depth": "3,12,12,6,3,9", "generator_lr": 0.0003, "generator_wd": 4e-07, "discriminator_lr": 0.0003, "discriminator_wd": 4e-07, "discriminator_freq": 2, "opt_step_size": 400}, "seed": null, "batch_size": 64, "max_epochs": 50, "checkpoint_freq": 20, "num_outcomes": [3, 64, 64], "num_treatments": 4, "num_covariates": [1]}}
+
+{"epoch": 0, "training_stats": {"MSE": 0.24225553838664263}, "evaluation_stats": {"MSE": 0.23322328097290462}, "ellapsed_minutes": 0.40527640183766683}
+{"model_saved": "model_seed=None_epoch=0.pt\n"}
+{"epoch": 20, "training_stats": {"MSE": 0.030522940464800707}, "evaluation_stats": {"MSE": 0.04054240606104334}, "ellapsed_minutes": 8.414019481341045}
+{"model_saved": "model_seed=None_epoch=20.pt\n"}
+{"epoch": 40, "training_stats": {"MSE": 0.016724975770259297}, "evaluation_stats": {"MSE": 0.04299205646125807}, "ellapsed_minutes": 16.61596376101176}
+{"model_saved": "model_seed=None_epoch=40.pt\n"}
+{"epoch": 49, "training_stats": {"MSE": 0.012683672648756}, "evaluation_stats": {"MSE": 0.04567489599188169}, "ellapsed_minutes": 20.284284381071725}
+{"model_saved": "model_seed=None_epoch=49.pt\n"}
+{"stop": 49}

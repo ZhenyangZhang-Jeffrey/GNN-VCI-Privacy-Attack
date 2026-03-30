@@ -1,0 +1,25 @@
+{"training_args": {"name": "3.2_mnist_classifier", "artifact_path": "/workspace/VCI_Project/artifact", "device": "cuda:0", "data_path": "/workspace/VCI_Project/datasets/morphoMNIST", "data_name": "morphoMNIST", "label_names": "thickness,intensity", "checkpoint": null, "hparams": {"classifier_resolution": "32*32,16*16,8*8,4*4,1*1", "classifier_width": "16,32,64,128,256", "classifier_depth": "4,4,4,4,4", "classifier_fc_width": 1024, "classifier_fc_depth": 2, "classifier_lr": 0.0001, "classifier_wd": 4e-05, "classifier_ss": 500, "max_grad_norm": 1, "grad_skip_threshold": -1, "patience": 20, "outcome_emb_dim": 32, "treatment_emb_dim": 8, "covariate_emb_dim": 2, "defuse_steps": 3, "encoder_resolution": "32*32,16*16,8*8,4*4,1*1", "encoder_width": "16,32,64,128,256", "encoder_depth": "4,4,4,4,4", "decoder_resolution": "1*1,4*4,8*8,16*16,32*32", "decoder_width": "256,128,64,32,16", "decoder_depth": "4,4,4,4,4", "discriminator_resolution": "32*32,16*16,8*8,4*4,1*1", "discriminator_width": "16,32,64,128,256", "discriminator_depth": "4,4,4,4,4", "generator_lr": 0.0001, "generator_wd": 4e-05, "discriminator_lr": 0.0001, "discriminator_wd": 4e-05, "discriminator_freq": 2, "opt_step_size": 100}, "seed": null, "batch_size": 256, "max_epochs": 100, "checkpoint_freq": 10, "num_outcomes": [1, 32, 32], "num_treatments": 32, "num_covariates": [1]}}
+
+{"epoch": 0, "training_stats": {"MSE": 0.18002183037869474}, "evaluation_stats": {"MSE": 0.14163933247327803}, "ellapsed_minutes": 0.14632424513498943}
+{"model_saved": "model_seed=None_epoch=0.pt\n"}
+{"epoch": 10, "training_stats": {"MSE": 0.07227549857281625}, "evaluation_stats": {"MSE": 0.07167655602097511}, "ellapsed_minutes": 1.2877108573913574}
+{"model_saved": "model_seed=None_epoch=10.pt\n"}
+{"epoch": 20, "training_stats": {"MSE": 0.06780385584273237}, "evaluation_stats": {"MSE": 0.06810244545340538}, "ellapsed_minutes": 2.461263612906138}
+{"model_saved": "model_seed=None_epoch=20.pt\n"}
+{"epoch": 30, "training_stats": {"MSE": 0.058329639615530664}, "evaluation_stats": {"MSE": 0.059317946527153255}, "ellapsed_minutes": 3.646138107776642}
+{"model_saved": "model_seed=None_epoch=30.pt\n"}
+{"epoch": 40, "training_stats": {"MSE": 0.054715890548330676}, "evaluation_stats": {"MSE": 0.054165132157504556}, "ellapsed_minutes": 4.925316067536672}
+{"model_saved": "model_seed=None_epoch=40.pt\n"}
+{"epoch": 50, "training_stats": {"MSE": 0.05386391234524707}, "evaluation_stats": {"MSE": 0.05400340380147099}, "ellapsed_minutes": 6.087412488460541}
+{"model_saved": "model_seed=None_epoch=50.pt\n"}
+{"epoch": 60, "training_stats": {"MSE": 0.05274086052432973}, "evaluation_stats": {"MSE": 0.052951418701559304}, "ellapsed_minutes": 7.196377563476562}
+{"model_saved": "model_seed=None_epoch=60.pt\n"}
+{"epoch": 70, "training_stats": {"MSE": 0.051927845940944996}, "evaluation_stats": {"MSE": 0.053551649767905475}, "ellapsed_minutes": 8.32316175699234}
+{"model_saved": "model_seed=None_epoch=70.pt\n"}
+{"epoch": 80, "training_stats": {"MSE": 0.05124714623423333}, "evaluation_stats": {"MSE": 0.05010291300714016}, "ellapsed_minutes": 9.453959115346272}
+{"model_saved": "model_seed=None_epoch=80.pt\n"}
+{"epoch": 90, "training_stats": {"MSE": 0.051073102177457606}, "evaluation_stats": {"MSE": 0.0497705097310245}, "ellapsed_minutes": 10.601132396856944}
+{"model_saved": "model_seed=None_epoch=90.pt\n"}
+{"epoch": 99, "training_stats": {"MSE": 0.05084986895956892}, "evaluation_stats": {"MSE": 0.04999414002522826}, "ellapsed_minutes": 11.624878231684367}
+{"model_saved": "model_seed=None_epoch=99.pt\n"}
+{"stop": 99}

@@ -1,0 +1,205 @@
+{"training_args": {"name": "morphoMNIST-test", "artifact_path": "/workspace/VCI_Project/artifact", "device": "cuda:0", "data_path": "/workspace/VCI_Project/datasets/morphoMNIST", "data_name": "morphoMNIST", "label_names": "intensity", "omega0": 10.0, "omega1": 0.5, "omega2": 0.1, "dist_outcomes": "bernoulli", "dist_mode": "discriminate", "checkpoint": null, "checkpoint_classifier": null, "hparams": {"outcome_emb_dim": 32, "treatment_emb_dim": 8, "covariate_emb_dim": 2, "defuse_steps": 3, "encoder_resolution": "32*32,16*16,8*8,4*4,1*1", "encoder_width": "16,32,64,128,256", "encoder_depth": "4,4,4,4,4", "decoder_resolution": "1*1,4*4,8*8,16*16,32*32", "decoder_width": "256,128,64,32,16", "decoder_depth": "4,4,4,4,4", "discriminator_resolution": "32*32,16*16,8*8,4*4,1*1", "discriminator_width": "16,32,64,128,256", "discriminator_depth": "4,4,4,4,4", "generator_lr": 0.0001, "generator_wd": 4e-05, "discriminator_lr": 0.0001, "discriminator_wd": 4e-05, "discriminator_freq": 2, "opt_step_size": 100, "max_grad_norm": 1, "grad_skip_threshold": -1, "patience": 20, "classifier_resolution": "32*32,16*16,8*8,4*4,1*1", "classifier_width": "16,32,64,128,256", "classifier_depth": "4,4,4,4,4", "classifier_lr": 0.0001, "classifier_wd": 4e-05}, "seed": null, "batch_size": 512, "max_epochs": 200, "checkpoint_freq": 2, "eval_mode": "native", "num_outcomes": [1, 32, 32], "num_treatments": 16, "num_covariates": [1]}}
+
+{"epoch": 0, "training_stats": {"Indiv-spec NLLH": 0.4757608884977082, "Covar-spec NLLH": 0.8669491036463592, "KL Divergence": 0.1556603881072695, "Real Sample Loss": 0.3199510493520963, "Fake Sample Loss": 0.31148918528678055}, "evaluation_stats": [], "ellapsed_minutes": 0.7485188563664754}
+{"model_saved": "model_seed=None_epoch=0.pt\n"}
+{"epoch": 2, "training_stats": {"Indiv-spec NLLH": 0.21863286790706343, "Covar-spec NLLH": 0.8144549459724103, "KL Divergence": 2.2080222140934507, "Real Sample Loss": 0.3289281372296608, "Fake Sample Loss": 0.3309016429771811}, "evaluation_stats": [], "ellapsed_minutes": 2.135163644949595}
+{"model_saved": "model_seed=None_epoch=2.pt\n"}
+{"epoch": 4, "training_stats": {"Indiv-spec NLLH": 0.2132112727326862, "Covar-spec NLLH": 1.203662045931412, "KL Divergence": 2.3194289384251934, "Real Sample Loss": 0.25660116137084316, "Fake Sample Loss": 0.2757949748281705}, "evaluation_stats": [], "ellapsed_minutes": 3.5158071597417195}
+{"model_saved": "model_seed=None_epoch=4.pt\n"}
+{"epoch": 6, "training_stats": {"Indiv-spec NLLH": 0.24828502838894473, "Covar-spec NLLH": 1.339733904196044, "KL Divergence": 3.522466153411542, "Real Sample Loss": 0.27141035398689367, "Fake Sample Loss": 0.25718575084613543}, "evaluation_stats": [], "ellapsed_minutes": 4.901981071631114}
+{"model_saved": "model_seed=None_epoch=6.pt\n"}
+{"epoch": 8, "training_stats": {"Indiv-spec NLLH": 0.25548347767631885, "Covar-spec NLLH": 1.2639027955168385, "KL Divergence": 2.3755295271590606, "Real Sample Loss": 0.35343956770533225, "Fake Sample Loss": 0.28644102912838176}, "evaluation_stats": [], "ellapsed_minutes": 6.27915369272232}
+{"model_saved": "model_seed=None_epoch=8.pt\n"}
+{"epoch": 10, "training_stats": {"Indiv-spec NLLH": 0.24441785226433965, "Covar-spec NLLH": 1.1455213973077678, "KL Divergence": 2.4345612495632496, "Real Sample Loss": 0.2973116201869512, "Fake Sample Loss": 0.3027258029176017}, "evaluation_stats": [], "ellapsed_minutes": 7.662899518013001}
+{"model_saved": "model_seed=None_epoch=10.pt\n"}
+{"epoch": 12, "training_stats": {"Indiv-spec NLLH": 0.24029102391105586, "Covar-spec NLLH": 1.1091842540239885, "KL Divergence": 2.484985987513752, "Real Sample Loss": 0.2952705092601857, "Fake Sample Loss": 0.3006901600855892}, "evaluation_stats": [], "ellapsed_minutes": 9.042423339684804}
+{"model_saved": "model_seed=None_epoch=12.pt\n"}
+{"epoch": 14, "training_stats": {"Indiv-spec NLLH": 0.23769739876359197, "Covar-spec NLLH": 1.1059747439319805, "KL Divergence": 2.4874349342564406, "Real Sample Loss": 0.30177987480567675, "Fake Sample Loss": 0.28950013662293805}, "evaluation_stats": [], "ellapsed_minutes": 10.426269241174062}
+{"model_saved": "model_seed=None_epoch=14.pt\n"}
+{"epoch": 16, "training_stats": {"Indiv-spec NLLH": 0.23630525929442905, "Covar-spec NLLH": 1.144459465297602, "KL Divergence": 2.6169632430803977, "Real Sample Loss": 0.3152517916287406, "Fake Sample Loss": 0.28157399039147263}, "evaluation_stats": [], "ellapsed_minutes": 11.816436970233918}
+{"model_saved": "model_seed=None_epoch=16.pt\n"}
+{"epoch": 18, "training_stats": {"Indiv-spec NLLH": 0.23497923211020938, "Covar-spec NLLH": 1.1127498579227317, "KL Divergence": 2.6219342052936554, "Real Sample Loss": 0.30048483584896996, "Fake Sample Loss": 0.29195751666517583}, "evaluation_stats": [], "ellapsed_minutes": 13.211932428677876}
+{"model_saved": "model_seed=None_epoch=18.pt\n"}
+{"epoch": 20, "training_stats": {"Indiv-spec NLLH": 0.2347823497602495, "Covar-spec NLLH": 1.1194812665551395, "KL Divergence": 2.8046647148617243, "Real Sample Loss": 0.3097650850728407, "Fake Sample Loss": 0.29222511462235856}, "evaluation_stats": [], "ellapsed_minutes": 14.602796669801076}
+{"model_saved": "model_seed=None_epoch=20.pt\n"}
+{"epoch": 22, "training_stats": {"Indiv-spec NLLH": 0.233476007515091, "Covar-spec NLLH": 1.0993455347873398, "KL Divergence": 2.7531444975885293, "Real Sample Loss": 0.2968181293394606, "Fake Sample Loss": 0.29318653779514764}, "evaluation_stats": [], "ellapsed_minutes": 16.002734978993733}
+{"model_saved": "model_seed=None_epoch=22.pt\n"}
+{"epoch": 24, "training_stats": {"Indiv-spec NLLH": 0.23254228408558894, "Covar-spec NLLH": 1.1741869939585863, "KL Divergence": 3.0385056087526223, "Real Sample Loss": 0.31289541317244707, "Fake Sample Loss": 0.2779458733433384}, "evaluation_stats": [], "ellapsed_minutes": 17.42334928512573}
+{"model_saved": "model_seed=None_epoch=24.pt\n"}
+{"epoch": 26, "training_stats": {"Indiv-spec NLLH": 0.23134708821268404, "Covar-spec NLLH": 1.165639710123256, "KL Divergence": 3.4547560144278964, "Real Sample Loss": 0.29722203390072965, "Fake Sample Loss": 0.2865433538869276}, "evaluation_stats": [], "ellapsed_minutes": 18.805221140384674}
+{"model_saved": "model_seed=None_epoch=26.pt\n"}
+{"epoch": 28, "training_stats": {"Indiv-spec NLLH": 0.2323622876557253, "Covar-spec NLLH": 1.1980047660358881, "KL Divergence": 3.5297306796251715, "Real Sample Loss": 0.30361334954277946, "Fake Sample Loss": 0.2800575484663753}, "evaluation_stats": [], "ellapsed_minutes": 20.15833705663681}
+{"model_saved": "model_seed=None_epoch=28.pt\n"}
+{"epoch": 30, "training_stats": {"Indiv-spec NLLH": 0.2321974992499513, "Covar-spec NLLH": 1.2965305796114064, "KL Divergence": 3.609878551151793, "Real Sample Loss": 0.3154986004455615, "Fake Sample Loss": 0.25919931672387203}, "evaluation_stats": [], "ellapsed_minutes": 21.513030246893564}
+{"model_saved": "model_seed=None_epoch=30.pt\n"}
+{"epoch": 32, "training_stats": {"Indiv-spec NLLH": 0.2339093659893941, "Covar-spec NLLH": 1.4341473114692558, "KL Divergence": 3.8731379731226774, "Real Sample Loss": 0.32049180731429894, "Fake Sample Loss": 0.2430700402770002}, "evaluation_stats": [], "ellapsed_minutes": 22.872078478336334}
+{"model_saved": "model_seed=None_epoch=32.pt\n"}
+{"epoch": 34, "training_stats": {"Indiv-spec NLLH": 0.23771384813017765, "Covar-spec NLLH": 1.7492482404587633, "KL Divergence": 3.882142102314254, "Real Sample Loss": 0.3123538894420963, "Fake Sample Loss": 0.22760904441445562}, "evaluation_stats": [], "ellapsed_minutes": 24.2246333082517}
+{"model_saved": "model_seed=None_epoch=34.pt\n"}
+{"epoch": 36, "training_stats": {"Indiv-spec NLLH": 0.25417061756222936, "Covar-spec NLLH": 2.748150445647159, "KL Divergence": 19.815188692787945, "Real Sample Loss": 0.23314085331256107, "Fake Sample Loss": 0.24298510577340246}, "evaluation_stats": [], "ellapsed_minutes": 25.583951040109}
+{"model_saved": "model_seed=None_epoch=36.pt\n"}
+{"epoch": 38, "training_stats": {"Indiv-spec NLLH": 0.22950263308771587, "Covar-spec NLLH": 2.116439774885016, "KL Divergence": 10.856367132421267, "Real Sample Loss": 0.25284492262339187, "Fake Sample Loss": 0.2633773079931231}, "evaluation_stats": [], "ellapsed_minutes": 26.956605116526287}
+{"model_saved": "model_seed=None_epoch=38.pt\n"}
+{"epoch": 40, "training_stats": {"Indiv-spec NLLH": 0.2666895441332106, "Covar-spec NLLH": 1.9492474913091984, "KL Divergence": 16.004888081954697, "Real Sample Loss": 0.305792697531692, "Fake Sample Loss": 0.3146690871819096}, "evaluation_stats": [], "ellapsed_minutes": 28.31449797550837}
+{"model_saved": "model_seed=None_epoch=40.pt\n"}
+{"epoch": 42, "training_stats": {"Indiv-spec NLLH": 0.27260103960663584, "Covar-spec NLLH": 1.7512165262537487, "KL Divergence": 7.8032451645802645, "Real Sample Loss": 0.2549898039739011, "Fake Sample Loss": 0.2787178537603152}, "evaluation_stats": [], "ellapsed_minutes": 29.676097146670024}
+{"model_saved": "model_seed=None_epoch=42.pt\n"}
+{"epoch": 44, "training_stats": {"Indiv-spec NLLH": 0.26678787714849084, "Covar-spec NLLH": 1.6108711051233744, "KL Divergence": 9.546690154883821, "Real Sample Loss": 0.25120138970472045, "Fake Sample Loss": 0.30179780090259295}, "evaluation_stats": [], "ellapsed_minutes": 31.037942254543303}
+{"model_saved": "model_seed=None_epoch=44.pt\n"}
+{"epoch": 46, "training_stats": {"Indiv-spec NLLH": 0.2768123252159458, "Covar-spec NLLH": 1.6899224868265248, "KL Divergence": 11.511078187974833, "Real Sample Loss": 0.29893652261313747, "Fake Sample Loss": 0.2648990630977235}, "evaluation_stats": [], "ellapsed_minutes": 32.38895279566447}
+{"model_saved": "model_seed=None_epoch=46.pt\n"}
+{"epoch": 48, "training_stats": {"Indiv-spec NLLH": 0.2690231619497477, "Covar-spec NLLH": 1.7358103773351443, "KL Divergence": 15.769405488240517, "Real Sample Loss": 0.2856644929970725, "Fake Sample Loss": 0.2919079022071624}, "evaluation_stats": [], "ellapsed_minutes": 33.744965581099194}
+{"model_saved": "model_seed=None_epoch=48.pt\n"}
+{"epoch": 50, "training_stats": {"Indiv-spec NLLH": 0.283013856259443, "Covar-spec NLLH": 1.9765561101800304, "KL Divergence": 12.35432260319338, "Real Sample Loss": 0.24939837672952878, "Fake Sample Loss": 0.2526333627559371}, "evaluation_stats": [], "ellapsed_minutes": 35.11241360505422}
+{"model_saved": "model_seed=None_epoch=50.pt\n"}
+{"epoch": 52, "training_stats": {"Indiv-spec NLLH": 0.27680682795027556, "Covar-spec NLLH": 2.1891573945344507, "KL Divergence": 16.72639236005686, "Real Sample Loss": 0.251997436933472, "Fake Sample Loss": 0.33531940210673766}, "evaluation_stats": [], "ellapsed_minutes": 36.49416911999385}
+{"model_saved": "model_seed=None_epoch=52.pt\n"}
+{"epoch": 54, "training_stats": {"Indiv-spec NLLH": 0.27362637057647865, "Covar-spec NLLH": 2.275185479829877, "KL Divergence": 13.644966895297422, "Real Sample Loss": 0.307778633183847, "Fake Sample Loss": 0.2995930356999575}, "evaluation_stats": [], "ellapsed_minutes": 37.87543964783351}
+{"model_saved": "model_seed=None_epoch=54.pt\n"}
+{"epoch": 56, "training_stats": {"Indiv-spec NLLH": 0.28648242026062337, "Covar-spec NLLH": 2.429186200186358, "KL Divergence": 10.336808984562502, "Real Sample Loss": 0.26820717600442595, "Fake Sample Loss": 0.2696918174624443}, "evaluation_stats": [], "ellapsed_minutes": 39.267329168319705}
+{"model_saved": "model_seed=None_epoch=56.pt\n"}
+{"epoch": 58, "training_stats": {"Indiv-spec NLLH": 0.27850998445587644, "Covar-spec NLLH": 2.488938625081111, "KL Divergence": 12.696418358107744, "Real Sample Loss": 0.23895072848615, "Fake Sample Loss": 0.2730237908535085}, "evaluation_stats": [], "ellapsed_minutes": 40.66484180688858}
+{"model_saved": "model_seed=None_epoch=58.pt\n"}
+{"epoch": 60, "training_stats": {"Indiv-spec NLLH": 0.2780527153005034, "Covar-spec NLLH": 2.514777091600127, "KL Divergence": 14.558526338157007, "Real Sample Loss": 0.24060139628285068, "Fake Sample Loss": 0.2383837328623917}, "evaluation_stats": [], "ellapsed_minutes": 42.07059088548024}
+{"model_saved": "model_seed=None_epoch=60.pt\n"}
+{"epoch": 62, "training_stats": {"Indiv-spec NLLH": 0.26415272410643303, "Covar-spec NLLH": 2.623234650846255, "KL Divergence": 11.662246986971063, "Real Sample Loss": 0.25175764323291133, "Fake Sample Loss": 0.2633228781869856}, "evaluation_stats": [], "ellapsed_minutes": 43.46541785796483}
+{"model_saved": "model_seed=None_epoch=62.pt\n"}
+{"epoch": 64, "training_stats": {"Indiv-spec NLLH": 0.2652369564620115, "Covar-spec NLLH": 2.434865611084437, "KL Divergence": 13.906983642254845, "Real Sample Loss": 0.2835923179163266, "Fake Sample Loss": 0.3174205976775137}, "evaluation_stats": [], "ellapsed_minutes": 44.847178347905476}
+{"model_saved": "model_seed=None_epoch=64.pt\n"}
+{"epoch": 66, "training_stats": {"Indiv-spec NLLH": 0.24611030140165555, "Covar-spec NLLH": 2.718057557687921, "KL Divergence": 20.678596937050255, "Real Sample Loss": 0.33424099490551623, "Fake Sample Loss": 0.25422701056478386}, "evaluation_stats": [], "ellapsed_minutes": 46.23632406791051}
+{"model_saved": "model_seed=None_epoch=66.pt\n"}
+{"epoch": 68, "training_stats": {"Indiv-spec NLLH": 0.23713712608915263, "Covar-spec NLLH": 2.2240510188927085, "KL Divergence": 11.640789060269372, "Real Sample Loss": 0.22908180532187727, "Fake Sample Loss": 0.3053115706069995}, "evaluation_stats": [], "ellapsed_minutes": 47.62287830909093}
+{"model_saved": "model_seed=None_epoch=68.pt\n"}
+{"epoch": 70, "training_stats": {"Indiv-spec NLLH": 0.23860412671909495, "Covar-spec NLLH": 2.6569630857241355, "KL Divergence": 13.940847598900229, "Real Sample Loss": 0.2761289550591323, "Fake Sample Loss": 0.26789730294781217}, "evaluation_stats": [], "ellapsed_minutes": 49.00089068810145}
+{"model_saved": "model_seed=None_epoch=70.pt\n"}
+{"epoch": 72, "training_stats": {"Indiv-spec NLLH": 0.23599041670055712, "Covar-spec NLLH": 2.6410929661686136, "KL Divergence": 14.020322124836808, "Real Sample Loss": 0.260914464118117, "Fake Sample Loss": 0.2213771277565067}, "evaluation_stats": [], "ellapsed_minutes": 50.39090680678685}
+{"model_saved": "model_seed=None_epoch=72.pt\n"}
+{"epoch": 74, "training_stats": {"Indiv-spec NLLH": 0.2274353004108041, "Covar-spec NLLH": 2.7895520402718397, "KL Divergence": 15.241170349767653, "Real Sample Loss": 0.33255512279979255, "Fake Sample Loss": 0.28148855665161954}, "evaluation_stats": [], "ellapsed_minutes": 51.772512284914654}
+{"model_saved": "model_seed=None_epoch=74.pt\n"}
+{"epoch": 76, "training_stats": {"Indiv-spec NLLH": 0.21833509459333905, "Covar-spec NLLH": 3.468162155757516, "KL Divergence": 12.825510574599443, "Real Sample Loss": 0.2883209696007987, "Fake Sample Loss": 0.22038539019176515}, "evaluation_stats": [], "ellapsed_minutes": 53.16080587307612}
+{"model_saved": "model_seed=None_epoch=76.pt\n"}
+{"epoch": 78, "training_stats": {"Indiv-spec NLLH": 0.21602130757044938, "Covar-spec NLLH": 3.4986710427171093, "KL Divergence": 12.41517431453123, "Real Sample Loss": 0.24927692639373117, "Fake Sample Loss": 0.20841505744699704}, "evaluation_stats": [], "ellapsed_minutes": 54.55195998748143}
+{"model_saved": "model_seed=None_epoch=78.pt\n"}
+{"epoch": 80, "training_stats": {"Indiv-spec NLLH": 0.2237528644628444, "Covar-spec NLLH": 3.721926893218089, "KL Divergence": 18.900944095546915, "Real Sample Loss": 0.23659676799582222, "Fake Sample Loss": 0.20334161521267083}, "evaluation_stats": [], "ellapsed_minutes": 55.9337361574173}
+{"model_saved": "model_seed=None_epoch=80.pt\n"}
+{"epoch": 82, "training_stats": {"Indiv-spec NLLH": 0.20628279321274515, "Covar-spec NLLH": 3.3240763696573548, "KL Divergence": 10.05361224433123, "Real Sample Loss": 0.2238051446817689, "Fake Sample Loss": 0.21793967801130423}, "evaluation_stats": [], "ellapsed_minutes": 57.32593156496684}
+{"model_saved": "model_seed=None_epoch=82.pt\n"}
+{"epoch": 84, "training_stats": {"Indiv-spec NLLH": 0.19487698073104276, "Covar-spec NLLH": 3.6390528749611417, "KL Divergence": 16.87711876125659, "Real Sample Loss": 0.36420455674435626, "Fake Sample Loss": 0.2864840935236948}, "evaluation_stats": [], "ellapsed_minutes": 58.71336114009221}
+{"model_saved": "model_seed=None_epoch=84.pt\n"}
+{"epoch": 86, "training_stats": {"Indiv-spec NLLH": 0.18642164817300894, "Covar-spec NLLH": 3.0136352110717257, "KL Divergence": 9.161302534200377, "Real Sample Loss": 0.2109260683468843, "Fake Sample Loss": 0.26328713503682005}, "evaluation_stats": [], "ellapsed_minutes": 60.09098304510117}
+{"model_saved": "model_seed=None_epoch=86.pt\n"}
+{"epoch": 88, "training_stats": {"Indiv-spec NLLH": 0.17683313307115586, "Covar-spec NLLH": 3.190062986592115, "KL Divergence": 10.040332858845339, "Real Sample Loss": 0.24439856138522342, "Fake Sample Loss": 0.23165557602957143}, "evaluation_stats": [], "ellapsed_minutes": 61.45569874048233}
+{"model_saved": "model_seed=None_epoch=88.pt\n"}
+{"epoch": 90, "training_stats": {"Indiv-spec NLLH": 0.16386907219381655, "Covar-spec NLLH": 3.3833117070844616, "KL Divergence": 8.485519170761108, "Real Sample Loss": 0.22834766517251226, "Fake Sample Loss": 0.21383413533538076}, "evaluation_stats": [], "ellapsed_minutes": 62.83806449174881}
+{"model_saved": "model_seed=None_epoch=90.pt\n"}
+{"epoch": 92, "training_stats": {"Indiv-spec NLLH": 0.15970274250386124, "Covar-spec NLLH": 3.4594793683391507, "KL Divergence": 8.558593964172623, "Real Sample Loss": 0.21793079332022344, "Fake Sample Loss": 0.21804886620681166}, "evaluation_stats": [], "ellapsed_minutes": 64.23534734646479}
+{"model_saved": "model_seed=None_epoch=92.pt\n"}
+{"epoch": 94, "training_stats": {"Indiv-spec NLLH": 0.15148693158970042, "Covar-spec NLLH": 3.339124574499615, "KL Divergence": 9.358124345035876, "Real Sample Loss": 0.261159929683653, "Fake Sample Loss": 0.1857160796742823}, "evaluation_stats": [], "ellapsed_minutes": 65.61643290917078}
+{"model_saved": "model_seed=None_epoch=94.pt\n"}
+{"epoch": 96, "training_stats": {"Indiv-spec NLLH": 0.1521857504622411, "Covar-spec NLLH": 3.7182903320102367, "KL Divergence": 8.935462729405549, "Real Sample Loss": 0.21542038418100043, "Fake Sample Loss": 0.2156501885945514}, "evaluation_stats": [], "ellapsed_minutes": 67.00400788386663}
+{"model_saved": "model_seed=None_epoch=96.pt\n"}
+{"epoch": 98, "training_stats": {"Indiv-spec NLLH": 0.15254570430113099, "Covar-spec NLLH": 3.7712770518610035, "KL Divergence": 9.924180374307147, "Real Sample Loss": 0.21724716794945426, "Fake Sample Loss": 0.2063493176789607}, "evaluation_stats": [], "ellapsed_minutes": 68.37758677005768}
+{"model_saved": "model_seed=None_epoch=98.pt\n"}
+{"epoch": 100, "training_stats": {"Indiv-spec NLLH": 0.14818078393148162, "Covar-spec NLLH": 3.858869714252019, "KL Divergence": 7.958284685167215, "Real Sample Loss": 0.19464849251306662, "Fake Sample Loss": 0.18300060852099273}, "evaluation_stats": [], "ellapsed_minutes": 69.76010764439901}
+{"model_saved": "model_seed=None_epoch=100.pt\n"}
+{"epoch": 102, "training_stats": {"Indiv-spec NLLH": 0.14729463574239762, "Covar-spec NLLH": 3.9769949508925615, "KL Divergence": 9.163052195209568, "Real Sample Loss": 0.18132090177071297, "Fake Sample Loss": 0.2045077980827477}, "evaluation_stats": [], "ellapsed_minutes": 71.14069513479869}
+{"model_saved": "model_seed=None_epoch=102.pt\n"}
+{"epoch": 104, "training_stats": {"Indiv-spec NLLH": 0.14859965304702016, "Covar-spec NLLH": 4.454351508011253, "KL Divergence": 12.330754106327639, "Real Sample Loss": 0.2154131630214594, "Fake Sample Loss": 0.1880743469790382}, "evaluation_stats": [], "ellapsed_minutes": 72.51994189421336}
+{"model_saved": "model_seed=None_epoch=104.pt\n"}
+{"epoch": 106, "training_stats": {"Indiv-spec NLLH": 0.14610655921495566, "Covar-spec NLLH": 4.357079653416649, "KL Divergence": 8.014628693208856, "Real Sample Loss": 0.191063880162724, "Fake Sample Loss": 0.18065210968508558}, "evaluation_stats": [], "ellapsed_minutes": 73.90466166734696}
+{"model_saved": "model_seed=None_epoch=106.pt\n"}
+{"epoch": 108, "training_stats": {"Indiv-spec NLLH": 0.14762134635347432, "Covar-spec NLLH": 4.3653117478904075, "KL Divergence": 9.662148758516473, "Real Sample Loss": 0.19363392719020278, "Fake Sample Loss": 0.20339684845027278}, "evaluation_stats": [], "ellapsed_minutes": 75.28982681830725}
+{"model_saved": "model_seed=None_epoch=108.pt\n"}
+{"epoch": 110, "training_stats": {"Indiv-spec NLLH": 0.14330551470235242, "Covar-spec NLLH": 4.504871833122383, "KL Divergence": 8.807290683358403, "Real Sample Loss": 0.19666960147225251, "Fake Sample Loss": 0.20427173805438867}, "evaluation_stats": [], "ellapsed_minutes": 76.68908583720525}
+{"model_saved": "model_seed=None_epoch=110.pt\n"}
+{"epoch": 112, "training_stats": {"Indiv-spec NLLH": 0.15402479255098409, "Covar-spec NLLH": 4.697316848625571, "KL Divergence": 11.75710473626347, "Real Sample Loss": 0.1829408978001546, "Fake Sample Loss": 0.20820256947713384}, "evaluation_stats": [], "ellapsed_minutes": 78.08294189771017}
+{"model_saved": "model_seed=None_epoch=112.pt\n"}
+{"epoch": 114, "training_stats": {"Indiv-spec NLLH": 0.14181546349141558, "Covar-spec NLLH": 4.351167468701378, "KL Divergence": 11.259736909704694, "Real Sample Loss": 0.19512567751235882, "Fake Sample Loss": 0.21879334173212617}, "evaluation_stats": [], "ellapsed_minutes": 79.47704175313314}
+{"model_saved": "model_seed=None_epoch=114.pt\n"}
+{"epoch": 116, "training_stats": {"Indiv-spec NLLH": 0.1429253110693673, "Covar-spec NLLH": 4.494795405258567, "KL Divergence": 10.721671585309304, "Real Sample Loss": 0.21949877331064918, "Fake Sample Loss": 0.21585196023017672}, "evaluation_stats": [], "ellapsed_minutes": 80.87110641797383}
+{"model_saved": "model_seed=None_epoch=116.pt\n"}
+{"epoch": 118, "training_stats": {"Indiv-spec NLLH": 0.14171463465791637, "Covar-spec NLLH": 4.627371872885752, "KL Divergence": 9.773761619955806, "Real Sample Loss": 0.19221485923912565, "Fake Sample Loss": 0.2109762182048822}, "evaluation_stats": [], "ellapsed_minutes": 82.27374420960744}
+{"model_saved": "model_seed=None_epoch=118.pt\n"}
+{"epoch": 120, "training_stats": {"Indiv-spec NLLH": 0.1461881039253736, "Covar-spec NLLH": 4.6982740527492455, "KL Divergence": 13.050412351802244, "Real Sample Loss": 0.2000891980478319, "Fake Sample Loss": 0.20588315808672017}, "evaluation_stats": [], "ellapsed_minutes": 83.66524354616801}
+{"model_saved": "model_seed=None_epoch=120.pt\n"}
+{"epoch": 122, "training_stats": {"Indiv-spec NLLH": 0.1381742401143252, "Covar-spec NLLH": 4.6286440138089455, "KL Divergence": 10.321811607328511, "Real Sample Loss": 0.2069481680706396, "Fake Sample Loss": 0.2086310997857886}, "evaluation_stats": [], "ellapsed_minutes": 85.04763996203741}
+{"model_saved": "model_seed=None_epoch=122.pt\n"}
+{"epoch": 124, "training_stats": {"Indiv-spec NLLH": 0.13903936352265084, "Covar-spec NLLH": 4.608669786129967, "KL Divergence": 10.359216055627597, "Real Sample Loss": 0.2036102079486443, "Fake Sample Loss": 0.21872756080859798}, "evaluation_stats": [], "ellapsed_minutes": 86.43520504236221}
+{"model_saved": "model_seed=None_epoch=124.pt\n"}
+{"epoch": 126, "training_stats": {"Indiv-spec NLLH": 0.13723362338239864, "Covar-spec NLLH": 4.485243740728346, "KL Divergence": 11.559543747012897, "Real Sample Loss": 0.21968358515177744, "Fake Sample Loss": 0.19999710205247848}, "evaluation_stats": [], "ellapsed_minutes": 87.81828749577204}
+{"model_saved": "model_seed=None_epoch=126.pt\n"}
+{"epoch": 128, "training_stats": {"Indiv-spec NLLH": 0.1330947551434323, "Covar-spec NLLH": 4.520373247437558, "KL Divergence": 10.246149645013324, "Real Sample Loss": 0.21709344498181748, "Fake Sample Loss": 0.2013131978653245}, "evaluation_stats": [], "ellapsed_minutes": 89.20121490955353}
+{"model_saved": "model_seed=None_epoch=128.pt\n"}
+{"epoch": 130, "training_stats": {"Indiv-spec NLLH": 0.13264965430154638, "Covar-spec NLLH": 4.499809525780758, "KL Divergence": 9.756094399145095, "Real Sample Loss": 0.1893457550618608, "Fake Sample Loss": 0.22365179266464913}, "evaluation_stats": [], "ellapsed_minutes": 90.59621518850327}
+{"model_saved": "model_seed=None_epoch=130.pt\n"}
+{"epoch": 132, "training_stats": {"Indiv-spec NLLH": 0.13317171332694716, "Covar-spec NLLH": 4.47588620751591, "KL Divergence": 10.053692967204725, "Real Sample Loss": 0.19887979316004253, "Fake Sample Loss": 0.21119279149225204}, "evaluation_stats": [], "ellapsed_minutes": 91.99444895585378}
+{"model_saved": "model_seed=None_epoch=132.pt\n"}
+{"epoch": 134, "training_stats": {"Indiv-spec NLLH": 0.13272529145923712, "Covar-spec NLLH": 4.59647403733205, "KL Divergence": 10.639980522252745, "Real Sample Loss": 0.19601223491511102, "Fake Sample Loss": 0.21196033085806895}, "evaluation_stats": [], "ellapsed_minutes": 93.39924207131068}
+{"model_saved": "model_seed=None_epoch=134.pt\n"}
+{"epoch": 136, "training_stats": {"Indiv-spec NLLH": 0.13447421435582435, "Covar-spec NLLH": 4.736752097889529, "KL Divergence": 11.346759153624712, "Real Sample Loss": 0.19741952924405115, "Fake Sample Loss": 0.20654721659118846}, "evaluation_stats": [], "ellapsed_minutes": 94.7919982790947}
+{"model_saved": "model_seed=None_epoch=136.pt\n"}
+{"epoch": 138, "training_stats": {"Indiv-spec NLLH": 0.13213072477255838, "Covar-spec NLLH": 4.4080395900597, "KL Divergence": 9.579720812328791, "Real Sample Loss": 0.19440892351380848, "Fake Sample Loss": 0.2101571976633395}, "evaluation_stats": [], "ellapsed_minutes": 96.18684816757838}
+{"model_saved": "model_seed=None_epoch=138.pt\n"}
+{"epoch": 140, "training_stats": {"Indiv-spec NLLH": 0.13884444616861263, "Covar-spec NLLH": 4.424566871028835, "KL Divergence": 12.370196528353933, "Real Sample Loss": 0.18641286153914566, "Fake Sample Loss": 0.20968545373466055}, "evaluation_stats": [], "ellapsed_minutes": 97.57961961428325}
+{"model_saved": "model_seed=None_epoch=140.pt\n"}
+{"epoch": 142, "training_stats": {"Indiv-spec NLLH": 0.13321617662401522, "Covar-spec NLLH": 4.497487009581873, "KL Divergence": 11.812175302182213, "Real Sample Loss": 0.1739888832730762, "Fake Sample Loss": 0.2106102424657951}, "evaluation_stats": [], "ellapsed_minutes": 98.97165189186732}
+{"model_saved": "model_seed=None_epoch=142.pt\n"}
+{"epoch": 144, "training_stats": {"Indiv-spec NLLH": 0.13072797100422745, "Covar-spec NLLH": 4.397203411086131, "KL Divergence": 8.35208691580821, "Real Sample Loss": 0.2197485564876411, "Fake Sample Loss": 0.18851173555446885}, "evaluation_stats": [], "ellapsed_minutes": 100.34890881776809}
+{"model_saved": "model_seed=None_epoch=144.pt\n"}
+{"epoch": 146, "training_stats": {"Indiv-spec NLLH": 0.13098162463155844, "Covar-spec NLLH": 4.480740185511315, "KL Divergence": 8.520606513750755, "Real Sample Loss": 0.18090364602157624, "Fake Sample Loss": 0.19415126665163848}, "evaluation_stats": [], "ellapsed_minutes": 101.74230790932974}
+{"model_saved": "model_seed=None_epoch=146.pt\n"}
+{"epoch": 148, "training_stats": {"Indiv-spec NLLH": 0.13046948959009122, "Covar-spec NLLH": 4.3711123426081775, "KL Divergence": 7.964917199086335, "Real Sample Loss": 0.17544599205760633, "Fake Sample Loss": 0.1951899779802662}, "evaluation_stats": [], "ellapsed_minutes": 103.12710936069489}
+{"model_saved": "model_seed=None_epoch=148.pt\n"}
+{"epoch": 150, "training_stats": {"Indiv-spec NLLH": 0.13114958843689853, "Covar-spec NLLH": 4.533929358094426, "KL Divergence": 8.376219026112961, "Real Sample Loss": 0.17032960183539633, "Fake Sample Loss": 0.2110828851996842}, "evaluation_stats": [], "ellapsed_minutes": 104.51238104899724}
+{"model_saved": "model_seed=None_epoch=150.pt\n"}
+{"epoch": 152, "training_stats": {"Indiv-spec NLLH": 0.13339178125231954, "Covar-spec NLLH": 4.66668908474809, "KL Divergence": 8.735878859536122, "Real Sample Loss": 0.17603961769807136, "Fake Sample Loss": 0.21390833869829015}, "evaluation_stats": [], "ellapsed_minutes": 105.89633541901907}
+{"model_saved": "model_seed=None_epoch=152.pt\n"}
+{"epoch": 154, "training_stats": {"Indiv-spec NLLH": 0.13029924578080743, "Covar-spec NLLH": 4.750906051215479, "KL Divergence": 8.483660374657582, "Real Sample Loss": 0.1651697865987228, "Fake Sample Loss": 0.19980609480102182}, "evaluation_stats": [], "ellapsed_minutes": 107.27946689923604}
+{"model_saved": "model_seed=None_epoch=154.pt\n"}
+{"epoch": 156, "training_stats": {"Indiv-spec NLLH": 0.13009828228061482, "Covar-spec NLLH": 4.7166108782008545, "KL Divergence": 8.097220505698253, "Real Sample Loss": 0.1762483476077096, "Fake Sample Loss": 0.18266595180256892}, "evaluation_stats": [], "ellapsed_minutes": 108.65639825661977}
+{"model_saved": "model_seed=None_epoch=156.pt\n"}
+{"epoch": 158, "training_stats": {"Indiv-spec NLLH": 0.13019380042866124, "Covar-spec NLLH": 4.737236582626731, "KL Divergence": 7.6867233656220515, "Real Sample Loss": 0.16580753634541723, "Fake Sample Loss": 0.1877577365454981}, "evaluation_stats": [], "ellapsed_minutes": 110.04319378534953}
+{"model_saved": "model_seed=None_epoch=158.pt\n"}
+{"epoch": 160, "training_stats": {"Indiv-spec NLLH": 0.1327112951647427, "Covar-spec NLLH": 5.032865229299513, "KL Divergence": 9.19227072343988, "Real Sample Loss": 0.1700932536337335, "Fake Sample Loss": 0.19633511655916602}, "evaluation_stats": [], "ellapsed_minutes": 111.43483750422796}
+{"model_saved": "model_seed=None_epoch=160.pt\n"}
+{"epoch": 162, "training_stats": {"Indiv-spec NLLH": 0.13416186436000516, "Covar-spec NLLH": 5.01715926800744, "KL Divergence": 10.745517928721542, "Real Sample Loss": 0.1663866209781776, "Fake Sample Loss": 0.19380879086458078}, "evaluation_stats": [], "ellapsed_minutes": 112.81262285709381}
+{"model_saved": "model_seed=None_epoch=162.pt\n"}
+{"epoch": 164, "training_stats": {"Indiv-spec NLLH": 0.13008511104321074, "Covar-spec NLLH": 4.865074327436544, "KL Divergence": 7.931606365462481, "Real Sample Loss": 0.1683727563437769, "Fake Sample Loss": 0.19910740852355957}, "evaluation_stats": [], "ellapsed_minutes": 114.1997662782669}
+{"model_saved": "model_seed=None_epoch=164.pt\n"}
+{"epoch": 166, "training_stats": {"Indiv-spec NLLH": 0.1296604871749878, "Covar-spec NLLH": 4.878777479721328, "KL Divergence": 7.719810425224951, "Real Sample Loss": 0.16777289481991428, "Fake Sample Loss": 0.19677437311511928}, "evaluation_stats": [], "ellapsed_minutes": 115.58912541468938}
+{"model_saved": "model_seed=None_epoch=166.pt\n"}
+{"epoch": 168, "training_stats": {"Indiv-spec NLLH": 0.12922493292618606, "Covar-spec NLLH": 4.955607885021275, "KL Divergence": 8.454074023133618, "Real Sample Loss": 0.16870745340898885, "Fake Sample Loss": 0.2100006536406986}, "evaluation_stats": [], "ellapsed_minutes": 117.00285392999649}
+{"model_saved": "model_seed=None_epoch=168.pt\n"}
+{"epoch": 170, "training_stats": {"Indiv-spec NLLH": 0.12844756839133925, "Covar-spec NLLH": 4.779446454371437, "KL Divergence": 8.505049984333878, "Real Sample Loss": 0.1743182156676963, "Fake Sample Loss": 0.20292383141941944}, "evaluation_stats": [], "ellapsed_minutes": 118.41379886865616}
+{"model_saved": "model_seed=None_epoch=170.pt\n"}
+{"epoch": 172, "training_stats": {"Indiv-spec NLLH": 0.12939936585598072, "Covar-spec NLLH": 5.0121797222202105, "KL Divergence": 8.226426791336577, "Real Sample Loss": 0.1602789459087081, "Fake Sample Loss": 0.19327954569105374}, "evaluation_stats": [], "ellapsed_minutes": 119.79796968698501}
+{"model_saved": "model_seed=None_epoch=172.pt\n"}
+{"epoch": 174, "training_stats": {"Indiv-spec NLLH": 0.12936823354181598, "Covar-spec NLLH": 4.886483879412635, "KL Divergence": 7.899935985015611, "Real Sample Loss": 0.1575184213155407, "Fake Sample Loss": 0.19757432414818618}, "evaluation_stats": [], "ellapsed_minutes": 121.18174055814742}
+{"model_saved": "model_seed=None_epoch=174.pt\n"}
+{"epoch": 176, "training_stats": {"Indiv-spec NLLH": 0.12924827932048652, "Covar-spec NLLH": 5.093611268673913, "KL Divergence": 8.15027715392032, "Real Sample Loss": 0.1586103982339471, "Fake Sample Loss": 0.18832858740273167}, "evaluation_stats": [], "ellapsed_minutes": 122.56260745922724}
+{"model_saved": "model_seed=None_epoch=176.pt\n"}
+{"epoch": 178, "training_stats": {"Indiv-spec NLLH": 0.12848432242112645, "Covar-spec NLLH": 5.098759707757982, "KL Divergence": 7.998077133954582, "Real Sample Loss": 0.16397992130053246, "Fake Sample Loss": 0.1945013925433159}, "evaluation_stats": [], "ellapsed_minutes": 123.95412791967392}
+{"model_saved": "model_seed=None_epoch=178.pt\n"}
+{"epoch": 180, "training_stats": {"Indiv-spec NLLH": 0.12867300963755382, "Covar-spec NLLH": 5.223936323392189, "KL Divergence": 8.173011646432391, "Real Sample Loss": 0.16679982992552095, "Fake Sample Loss": 0.1800354442606538}, "evaluation_stats": [], "ellapsed_minutes": 125.34875175555547}
+{"model_saved": "model_seed=None_epoch=180.pt\n"}
+{"epoch": 182, "training_stats": {"Indiv-spec NLLH": 0.12844494502928297, "Covar-spec NLLH": 5.121244147672492, "KL Divergence": 7.640065415430877, "Real Sample Loss": 0.16635563388719396, "Fake Sample Loss": 0.1798249681369733}, "evaluation_stats": [], "ellapsed_minutes": 126.73312167723974}
+{"model_saved": "model_seed=None_epoch=182.pt\n"}
+{"epoch": 184, "training_stats": {"Indiv-spec NLLH": 0.1285236250546019, "Covar-spec NLLH": 4.965137053344209, "KL Divergence": 7.288858369245368, "Real Sample Loss": 0.16194003971956544, "Fake Sample Loss": 0.18560424775390302}, "evaluation_stats": [], "ellapsed_minutes": 128.12152024904887}
+{"model_saved": "model_seed=None_epoch=184.pt\n"}
+{"epoch": 186, "training_stats": {"Indiv-spec NLLH": 0.12783254241034137, "Covar-spec NLLH": 5.13821585299605, "KL Divergence": 7.348610983056537, "Real Sample Loss": 0.15724627433691996, "Fake Sample Loss": 0.18057714945684045}, "evaluation_stats": [], "ellapsed_minutes": 129.5132850964864}
+{"model_saved": "model_seed=None_epoch=186.pt\n"}
+{"epoch": 188, "training_stats": {"Indiv-spec NLLH": 0.1277392104394355, "Covar-spec NLLH": 5.028437675055811, "KL Divergence": 7.198735281572503, "Real Sample Loss": 0.1639398595286628, "Fake Sample Loss": 0.18015088393526563}, "evaluation_stats": [], "ellapsed_minutes": 130.89010946353275}
+{"model_saved": "model_seed=None_epoch=188.pt\n"}
+{"epoch": 190, "training_stats": {"Indiv-spec NLLH": 0.127224169734676, "Covar-spec NLLH": 5.003302606485658, "KL Divergence": 6.978050478434159, "Real Sample Loss": 0.15494214440301313, "Fake Sample Loss": 0.17984546443163338}, "evaluation_stats": [], "ellapsed_minutes": 132.28282772699993}
+{"model_saved": "model_seed=None_epoch=190.pt\n"}
+{"epoch": 192, "training_stats": {"Indiv-spec NLLH": 0.12716494349099822, "Covar-spec NLLH": 5.107395782309063, "KL Divergence": 6.920187828904491, "Real Sample Loss": 0.1549943259964555, "Fake Sample Loss": 0.17877123795323452}, "evaluation_stats": [], "ellapsed_minutes": 133.6725119392077}
+{"model_saved": "model_seed=None_epoch=192.pt\n"}
+{"epoch": 194, "training_stats": {"Indiv-spec NLLH": 0.1269101695615356, "Covar-spec NLLH": 5.136863344806736, "KL Divergence": 6.942022262993506, "Real Sample Loss": 0.1559215210757013, "Fake Sample Loss": 0.18158599734306335}, "evaluation_stats": [], "ellapsed_minutes": 135.0690111041069}
+{"model_saved": "model_seed=None_epoch=194.pt\n"}
+{"epoch": 196, "training_stats": {"Indiv-spec NLLH": 0.12704470343256402, "Covar-spec NLLH": 5.134322097745993, "KL Divergence": 6.950415231413761, "Real Sample Loss": 0.16052994536141219, "Fake Sample Loss": 0.17817712562569119}, "evaluation_stats": [], "ellapsed_minutes": 136.46039126316705}
+{"model_saved": "model_seed=None_epoch=196.pt\n"}
+{"epoch": 198, "training_stats": {"Indiv-spec NLLH": 0.12700398537819668, "Covar-spec NLLH": 5.191257339412883, "KL Divergence": 7.004548242536642, "Real Sample Loss": 0.15751648302805626, "Fake Sample Loss": 0.17616775657160808}, "evaluation_stats": [], "ellapsed_minutes": 137.86304663419725}
+{"model_saved": "model_seed=None_epoch=198.pt\n"}
+{"epoch": 199, "training_stats": {"Indiv-spec NLLH": 0.1268339888903044, "Covar-spec NLLH": 5.17286952471329, "KL Divergence": 6.971129861928649, "Real Sample Loss": 0.15355951995667766, "Fake Sample Loss": 0.18037287006943914}, "evaluation_stats": [], "ellapsed_minutes": 138.55960821708044}
+{"model_saved": "model_seed=None_epoch=199.pt\n"}
+{"stop": 199}
