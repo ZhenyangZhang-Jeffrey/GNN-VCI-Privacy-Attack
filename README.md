@@ -22,8 +22,7 @@ This project demonstrates privacy threats from model inversion attacks through f
 - `prepare_attacker_dataset.py` - Extract latent features Z from VCI encoder
 - `train_attacker.py` - Train MLP attacker model (Z → Y)
 - `evaluate_attacker.py` - Evaluate attack success on 3 objectives
-- `visualize_hvg_attack.py` - Visualize HVG reconstruction (Chinese labels)
-- `visualize_hvg_attack_en.py` - Visualize HVG reconstruction (English labels)
+- `visualize_hvg_attack_en.py` - Visualize HVG reconstruction
 - Shell scripts for executing each step
 
 ### 🔧 Complete Execution Steps
